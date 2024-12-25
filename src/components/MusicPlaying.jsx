@@ -57,7 +57,7 @@ function MusicPlaying() {
     soundRef.current?.seek(seekTime);
   };
 
-  // Update progress bar
+  // progress bar
   useEffect(() => {
     const interval = setInterval(() => {
       if (soundRef.current && isPlaying) {
