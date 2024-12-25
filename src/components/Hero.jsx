@@ -48,7 +48,7 @@ function Hero() {
         <img
           src={MJ_IMG_URI}
           alt="Foreground"
-          className="absolute bottom-0 right-0 w-[75%]  z-10"
+          className="absolute bottom-0 right-0 w-[68%]  z-10"
         />
       </section>
 

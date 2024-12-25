@@ -4,7 +4,7 @@ import { discoverLogo, HomeLogo, libraryLogo, logo, logOutLogo, settingsLogo, tr
 
 function SideNavbar() {
   return (
-    <div className='bg-[#0f0f0f] w-[20%] flex flex-col items-center justify-between ' >
+    <div className='bg-[#0E0E0E] w-[20%] flex flex-col items-center justify-between ' >
       <div className='flex items-center justify-center gap-5 mt-5 '>
         <img src={logo} alt="" />
         <h1 className='font-semibold text-2xl text-white' ><span className='text-[#FF5656]'  >Dream</span>Music</h1>
