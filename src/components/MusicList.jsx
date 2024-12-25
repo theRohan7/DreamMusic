@@ -20,8 +20,6 @@ import Music from "./Music";
 function MusicList() {
   const { songs, setSongs } = useContext(MusicContext);
 
-  const [activeMusic, setActiveMusic] = useState(null);
-
   const getSongsPos = (id) => songs.findIndex((song) => song.id === id);
 
   const handleDragEnd = (e) => {
@@ -52,7 +50,7 @@ function MusicList() {
           See All
         </button>
       </div>
-      <div className="grid grid-cols-5  font-medium text-sm px-24 text-[#CFC5C5] mb-3">
+      <div className="grid grid-cols-5  font-medium text-sm px-24 ml-5 text-[#CFC5C5] mb-3">
         <span>#</span>
         <span>TITLE</span>
         <span>PLAYING</span>
@@ -66,8 +64,6 @@ function MusicList() {
               key={song.id}
               song={song}
               index={index}
-              activeMusic={activeMusic}
-              setActiveMusic={setActiveMusic}
             />
           ))}
         </SortableContext>
